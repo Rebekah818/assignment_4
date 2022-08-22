@@ -36,3 +36,10 @@ const reduce = (reducer, initialVaule, array) => {
 const sum1 = reduce(sumReducer, 0, arr);
 console.log(sum1);
 
+const myArray2 = [1,2,3,4,5];
+
+const reduce2 = myArray2.reduce((accumulator, currentValue, item, array) => {
+    console.log(currentValue);
+    return accumulator + currentValue;
+},10);
+console.log('reduce', reduce2);
